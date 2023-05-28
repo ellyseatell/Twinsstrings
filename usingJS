@@ -1,0 +1,49 @@
+function equalsCheck(a, b) {
+    // check the length of both strings
+    if (a.length != b.length) {
+        return false;
+    } else {
+        let result = false;
+
+        // comparing each element of the  array 
+        for (let i = 0; i < a.length; i++) {
+
+            if (a[i] !== b[i]) {
+                return false;
+            } else {
+                result = true;
+            }
+        }
+        return result;
+    }
+}
+
+
+function aretwins(a,b){
+
+var alowercase=a.toLowerCase()
+var blowercase=b.toLowerCase()
+
+var listofa=[]
+var listofb=[]
+
+for (var i=0;i<alowercase.length;i++){
+var a=alowercase.charAt(i)
+listofa.push(a)
+}
+
+for (var i=0;i<blowercase.length;i++){
+var b=blowercase.charAt(i)
+listofb.push(b)
+}
+var listofasorted=listofa.sort()
+var listofbsorted=listofb.sort()
+// Comparing both the arrays
+const result = equalsCheck(listofasorted, listofbsorted);
+//if result equal to true
+ if (result){return("twins")}
+ else {
+return ("not twins")
+     
+ }
+ }
