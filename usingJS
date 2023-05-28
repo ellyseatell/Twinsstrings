@@ -5,7 +5,7 @@ function equalsCheck(a, b) {
     } else {
         let result = false;
 
-        // comparing each element of the  array 
+        // comparing each element of the the string a with string b , it compares two strings and returns true if they are identical.
         for (let i = 0; i < a.length; i++) {
 
             if (a[i] !== b[i]) {
@@ -17,7 +17,9 @@ function equalsCheck(a, b) {
         return result;
     }
 }
-
+/*equalsCheck("Elyse","elyse")//returns false
+//equalsCheck("Elyse","Elyse")//returns true
+//equalsCheck("Elyse","Elyse1")//returns false*/
 
 function aretwins(a,b){
 
